@@ -1,0 +1,9 @@
+<h1>Create new Todo</h1>
+<%= form_for @todo do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<br />
+	<%= f.label :done %>
+	<%= f.check_box :done %>
+	<%= f.submit %>
+<% end %>
